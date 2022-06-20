@@ -266,5 +266,5 @@ const server = createServer(async(req, res) => {
     }
 });
 
-server.listen(port);
-console.log(`locally running at http://localhost:${port}/`);
+server.listen(process.env.PORT || 3000);
+console.log(`locally running at http://localhost:${process.env.PORT || 3000}/`);
