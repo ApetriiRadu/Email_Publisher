@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Email Publisher</title>
+    <link href="./verification.css" rel="stylesheet" type="text/css" />
+    <script defer src="verification.js"></script>
+</head>
+
+
+<body class="Background">
+    <div class="Box">
+        <p class="Title">Email Publisher</p>
+
+        <div class="verification-display hidden">
+            <p class="Text">Introduceti codul de verificare</p>
+        </div>
+
+        <div class="checkpoint">
+            <p class="Text">Introduceti email-ul</p>
+        </div>
+
+        <div class="verification-display hidden">
+            <label class="email">Cod</label>
+        </div>
+
+        <div class="checkpoint">
+            <label class="email">Email</label>
+        </div>
+
+        <p id="errorMessage"></p>
+        <input class="fieldEmail" id="verificationField" type="text" required>
+        <a class="buttonSubmit" id="submit-form">SUBMIT</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+.wow {
+    width: 100px;
+}
+
+.hidden{
+    display: none;
+}
+
+.buttonSubmit {
+    background-color: #452d5c;
+    border-radius: 28px;
+    border: 1px solid #bcd6bf;
+    display: flex;
+    margin: auto;
+    width: 40px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #8f8f8f;
+}
+
+.buttonSubmit:hover {
+    background-color: #717171;
+}
+
+.buttonSubmit:active {
+    position: relative;
+    top: 1px;
+}
+
+.email {
+    display: block;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.fieldEmail {
+    border-radius: 5px;
+    border: 1px solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin: auto;
+}
+
+.Title {
+    font-family: Arya, sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color: #2a0f70;
+    --color: #184899;
+    text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+}
+
+.Background {
+    --background: rgb(33, 95, 204);
+    --background: linear-gradient(133deg, rgba(33, 95, 204, 1) 0%, rgba(140, 180, 255, 1) 100%);
+    background: rgb(51, 30, 71);
+    background: linear-gradient(133deg, rgba(51, 30, 71, 1) 0%, rgba(76, 14, 184, 1) 100%);
+}
+
+.Box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 350px;
+    box-shadow: 10px 10px 21px -1px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+
+.Text {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: #2a0f70;
+}
+
+#errorMessage{
+    text-align: center;
+}

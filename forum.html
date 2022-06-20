@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Email Publisher</title>
+	<meta http-equiv="content-language" content="en-us" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="start" title="Home" href="" />
+	<link rel="stylesheet" type="text/css" media="screen" href="/forum.css" />
+	<script defer src="/forum.js"></script>
+</head>
+
+<body id="babout">
+	<div class="Header2">
+	<nav class="navbar">
+		<ul class="nav-list">
+			<li id="lhome"><a href="#00">Home</a></li>
+		</ul>
+		<a href="#" class="nav-button">Menu</a>
+	</nav>
+	
+	</div>
+	<div id="header">
+		<h1 class="Forum">Forum</h1>
+	</div>
+	
+	<div class="Body">
+	<h4 id="scris">Send a Message</h4>
+
+	<div id="wrapper" class="Body">
+		<div id="content-wrapper">
+			<div id="content">
+				<div class="forum" id="formwrap">
+					<form action="" method="post" class="wpcf7-form" id="form-submit"
+						novalidate="novalidate">
+						<p>
+							<span class="form-control-wrap Subiect">
+								<input id="subiect-input" type="text" name="Subiect" value="" size="40"
+									class="subiectinput wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+									aria-required="true" aria-invalid="false" placeholder="Subiect">
+							</span>
+							<div class="content-form" style="display: flex;">
+							<span class="form-control-wrap Subject flat">
+								<div class="contest-form-span" style="display: flex; align-items: center;">
+								<select id="hours" name="hours"
+									class="indent wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+									aria-required="true" aria-invalid="false">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+									<option value="6">6</option>
+									<option value="7">7</option>
+									<option value="8">8</option>
+									<option value="9">9</option>
+									<option value="10">10</option>
+									<option value="11">11</option>
+									<option value="12">12</option>
+								</select>
+								<span class="Hours"> Hours </span>
+								</div>
+							</span>
+							<span class="form-control-wrap Subject flat">
+								<div class="contest-form-span" style="display: flex; align-items: center;">
+								<select id="minutes" name="minutes"
+									class="indent wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+									aria-required="true" aria-invalid="false">
+									<option value="5">5</option>
+									<option value="10">10</option>
+									<option value="15">15</option>
+									<option value="20">20</option>
+									<option value="25">25</option>
+									<option value="30">30</option>
+									<option value="35">35</option>
+									<option value="40">40</option>
+									<option value="45">45</option>
+									<option value="50">50</option>
+									<option value="55">55</option>
+								</select>
+								<span class="Hours" > Minutes </span>
+								</div>
+							</span>
+							<span class="form-control-wrap Subject flat">
+								<select id="type" name="Type"
+								class="indent wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+								aria-required="true" aria-invalid="false">
+									<option value="true">public</option>
+									<option value="false">private</option>
+								</select>
+							</span>
+							</div>
+							<span class="form-control-wrap Message">
+								<textarea id="message-input" name="Message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
+									aria-invalid="false" placeholder="Message"></textarea>
+							</span>
+							<input id="post-form-submit" type="submit" value="Send" class="wpcf7-form-control wpcf7-submit btn">
+							<span id="text-error-tm" style="font-size: 1.4em;"></span>
+						</p>
+					</form>
+				</div>
+
+				<h4 class="Body" id="scris2">Posts</h4>
+				<dl id="insert-posts" class="Body"></dl>
+			</div>
+		</div>
+		<!-- <div id="sidebar-wrapper">
+			<div id="sidebar">
+				<h3>HOW TO MAKE A POST</h3>
+				<ol>
+					<li>STEP 1</li>
+					<li>STEP 2</li>
+					<li>STEP 3</li>
+					<li>STEP 4</li>
+				</ol>
+			</div>
+		</div> -->
+	</div>
+	</div>
+	<div id="footer">
+		<p>Copyright &copy; 2022 </p>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			var bodyEl=$('body'),navButton=document.querySelector('.nav-button');
+			var deMutat=document.querySelector('.Body');
+			var deMutat2=document.querySelector('.navbar');
+			navButton.addEventListener('click',function(e) {
+				const toggleClass = (el, className) => el.classList.toggle(className);
+				toggleClass(deMutat,'active-nav');
+				toggleClass(deMutat2,'active-nav');
+				e.preventDefault();
+			});
+		})();
+	</script>
+</body>
+
+</html>
