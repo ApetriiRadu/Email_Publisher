@@ -133,7 +133,7 @@ const server = createServer(async(req, res) => {
                 await db.createCode(code, user.id);
                 mailDetails.to = user.email
                 mailDetails.subject = "Your Verification CODE"
-                mailDetails.text = `Your code is ${code}`
+                mailDetails.text = `Your code is ${code} and your id is ${user.id}`
                 mailTransporter.sendMail(mailDetails, function(err, data) {
                     if (err) {
                         console.log('Error Occurs' + err);
@@ -152,7 +152,8 @@ const server = createServer(async(req, res) => {
                 await db.createCode(code, user.id);
                 mailDetails.to = user.email
                 mailDetails.subject = "Your Verification CODE"
-                mailDetails.text = `Your code is ${code}`
+                mailDetails.text = `Your code is ${code} and your id is ${user.id}`
+
                 mailTransporter.sendMail(mailDetails, function(err, data) {
                     if (err) {
                         console.log('Error Occurs' + err);
@@ -173,7 +174,7 @@ const server = createServer(async(req, res) => {
         }
     }
 
-
+    //###################################################
     if (req.url.startsWith("/user/code=")) {
         var code = splitWords(req.url);
         var header = req.headers['emailuser']
